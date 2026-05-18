@@ -80,6 +80,8 @@ extern crate alloc;
 extern crate macula_std as std;
 
 #[cfg(feature = "alloc")]
+use alloc::borrow::ToOwned;
+#[cfg(feature = "alloc")]
 use alloc::vec::Vec;
 use core::fmt;
 use core::ops::Deref;
