@@ -4,12 +4,12 @@ Vendored fork of [rustls/pki-types](https://github.com/rustls/pki-types)
 at version `1.14.1`, mechanically widened so the `feature = "std"`
 surface activates on `target_os = "none"` via the [`macula-std`] shim.
 
-Used transitively by [macula-rustls](https://codeberg.org/macula-internal/macula-rustls);
+Used transitively by [macula-rustls](https://github.com/macula-io/macula-rustls);
 quinn-proto reaches `UnixTime::now()` for ticket-rotation and
 `ServerName::to_str()` for SNI logging, both of which are upstream
 gated behind `feature = "std"`.
 
-[`macula-std`]: https://codeberg.org/macula-internal/macula-std
+[`macula-std`]: https://github.com/macula-io/macula-std
 
 ## The patches
 
